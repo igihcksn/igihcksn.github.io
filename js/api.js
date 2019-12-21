@@ -34,7 +34,7 @@ function getArticles() {
             data.teams.forEach(function(teams) {
               var url = teams.crestUrl;
               if (url != null) {
-                url.replace(/^http:\/\//i, 'https://');
+                url.replace(/http:\/\//i, 'https://');
               }
               teamsHTML += `
                   <tr>
@@ -81,7 +81,7 @@ function getArticles() {
       data.teams.forEach(function(teams) {
         var url = teams.crestUrl;
         if (url != null) {
-          url.replace(/^http:\/\//i, 'https://');
+          url.replace(/http:\/\//i, 'https://');
         }
         teamsHTML += `
             <tr>
